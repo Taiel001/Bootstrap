@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+  	<div id="header" class="bg-light">
+  		<div class="container-xl bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  			<div class="container-fluid">
+		    		<a class="navbar-brand">TecnologIT</a>
+		    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+		      			<span class="navbar-toggler-icon"></span>
+		    		</button>
+		    		<div class="collapse navbar-collapse" id="navbarScroll">
+				      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+				        <li class="nav-item">
+				          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+				        </li>
+				        <li class="nav-item">
+				          <a class="nav-link" href="#">Servicios</a>
+				        </li>
+				        <li class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Soporte
+				          </a>
+				          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+				            <li><a class="dropdown-item" href="pages/contacto.html">Contacto</a></li>
+				            <li><a class="dropdown-item" href="#">Software</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+		    		</div>
+		  		</div>
+			</nav>
+  		</div>
+  	</div>
+  	<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4 mail" src="../assets/mail.png" alt="" width="72" height="57">
+      <h2>Contacto</h2>
+      <p class="lead">Por favor rellene el formulario de contacto para poder comunicarnos.</p>
+    </div>
+
+      <div class="col-md-7 mx-auto">
+        <form class="needs-validation" novalidate="">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Nombre obligatorio.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+              <div class="invalid-feedback">
+                Apellido obligatorio.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Su usuario" required="">
+              <div class="invalid-feedback">
+                  Nombre de usuario obligatorio.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+               	Mail invalido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="address" placeholder="1234 Tierra del fuego" required="">
+              <div class="invalid-feedback">
+                Por favor ingrese su direccion.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Dirección 2 <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="Departamento">
+            </div>
+
+            <div class="col-md-6">
+              <label for="country" class="form-label">País</label>
+              <select class="form-select" id="country" required="">
+                <option value="">Seleccione uno...</option>
+                <option>Argentina</option>
+                <option>Bolivia</option>
+                <option>Chile</option>
+                <option>Paraguay</option>
+              </select>
+              <div class="invalid-feedback">
+                Elija un pais valido.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="zip" class="form-label">Codigo postal</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback">
+                Codigo Postal invalido.
+              </div>
+            </div>
+          </div>
+          <hr class="my-4">
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar formulario</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+  	<div class="container">
+  		<footer class="py-3 my-4">
+		    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+		      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Preguntas frecuentes</a></li>
+		      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Quienes somos</a></li>
+		    </ul>
+		    <p class="text-center text-muted">© 2021 Company, Inc</p>
+  		</footer>
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
